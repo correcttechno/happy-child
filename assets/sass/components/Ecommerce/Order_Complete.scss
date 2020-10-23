@@ -1,0 +1,181 @@
+.main_content_order{
+  .bag{
+    display: inline-block !important;
+  }
+  text-align: center;
+  img{
+    margin-top: 55px;
+  }
+  p{
+    &.thank{
+      font: 400 36px "MouseMemoirsRegular";
+      color: #384551;
+      margin-top: 50px;
+      margin-bottom: 55px;
+    }
+  }
+  .buttons{
+    text-transform: uppercase;
+    margin-bottom: 136px;
+    .home{
+      text-decoration: none;
+      color: #fff;
+      span{
+        font: 400 30px "MouseMemoirsRegular";
+        background: url(../images/products/product_detail/background_add_wishlist.png) no-repeat;
+        background-size: 230px 70px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        padding-right: 120px;
+        padding-left: 65px;
+        &:hover, &:focus, &:active{
+          background: url(../images/products/product_detail/background_add_card.png) no-repeat;
+          background-size: 230px 70px;
+        }
+      }
+    }
+    .shopping{
+      text-decoration: none;
+      span{
+        background: url(../images/products/product_detail/background_add_card.png) no-repeat;
+        color: #fff;
+        font: 400 30px "MouseMemoirsRegular";
+        background-size: 252px 70px;
+        padding-left: 40px;
+        padding-right: 65px;
+        padding-bottom: 84px;
+        padding-top: 15px;
+        &:hover, &:focus, &:active{
+          background: url(../images/products/product_detail/background_add_wishlist.png) no-repeat;
+          background-size: 252px 70px;
+        }
+      }
+    }
+  }
+}
+
+/****************************************/
+/***** Responsive 17 order complete ****/
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .main_content_order{
+    p{
+      &.thank{
+        font: 400 28px "MouseMemoirsRegular" !important;
+      }
+    }
+    .buttons{
+      .home{
+        span{
+          font: 400 25px "MouseMemoirsRegular";
+          background-size: 175px 62px;
+          padding-top: 15px;
+          padding-left: 46px;
+          &:hover, &:focus, &:active{
+            background-size: 175px 62px;
+          }
+        }
+      }
+      .shopping{
+        span{
+          font: 400 25px "MouseMemoirsRegular";
+          background-size: 203px 62px;
+          padding-left: 30px;
+          padding-right: 34px;
+          &:hover, &:focus, &:active{
+            background-size: 203px 62px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 359px) and (max-width: 480px){
+  .main_content_order{
+    p{
+      &.thank{
+        font: 400 24px "MouseMemoirsRegular" !important;
+      }
+    }
+    .buttons{
+      .home{
+        span{
+          font: 400 22px "MouseMemoirsRegular";
+          background-size: 138px 65px;
+          padding-top: 17px;
+          padding-left: 35px;
+          padding-right: 55px;
+          &:hover, &:focus, &:active{
+            background-size: 138px 65px;
+          }
+        }
+      }
+      .shopping{
+        span{
+          font: 400 22px "MouseMemoirsRegular";
+          background-size: 164px 62px;
+          padding-left: 20px;
+          padding-right: 20px;
+          &:hover, &:focus, &:active{
+            background-size: 164px 62px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 321px) {
+  .main_content_order{
+    p{
+      &.thank{
+        font: 400 24px "MouseMemoirsRegular" !important;
+      }
+    }
+    .buttons{
+      .home{
+        span{
+          font: 400 22px "MouseMemoirsRegular";
+          background-size: 165px 60px;
+          padding-top: 15px;
+          padding-left: 0px;
+          padding-right: 0px;
+          display: block;
+          width: 100%;
+          background-position-x: 62px;
+          margin-bottom: 30px;
+          &:hover, &:focus, &:active{
+            background-size: 165px 60px;
+          }
+        }
+      }
+      .shopping{
+        span{
+          font: 400 22px "MouseMemoirsRegular";
+          background-size: 164px 62px;
+          padding-left: 20px;
+          padding-right: 20px;
+          &:hover, &:focus, &:active{
+            background-size: 164px 62px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+.toggle-content{
+  h3{
+    color: #e41d2e;
+    padding-left: 15px;
+    font: 400 36px "MouseMemoirsRegular";
+  }
+  p{
+    color: #888888;
+    font: 400 15px "BellGothicStdLight";
+  }
+}
+.toggle{
+  margin-top: 15px;
+  ul{
+    list-style: none;
+    margin-bottom: 95px;
+    li{
+      position: relative;
+      &:active{
+        .toggle-content{
+          display: block;
+        }
+      }
+      &:before{
+        position: absolute;
+        content: "\f0da";
+        font: 400 16px "FontAwesome";
+        color: #888888;
+        left: 30px;
+        top: 15px;
+      }
+      a{
+        color: #888888;
+        font: 400 14px/48px "BellGothicStdBold";
+        text-decoration: none;
+        border-bottom: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+        margin-left: 50px;
+        display: block;
+        &.a_end{
+          border-bottom: none !important;
+        }
+        &.active{
+          border-right: none !important;
+          font: 400 14px/48px "BellGothicStdBlack";
+          color: #384551;
+        }
+      }
+    }
+  }
+}
+
+
+/***************************************************/
+/***************** Responsive FQA *****************/
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .toggle{
+    ul{
+      margin-bottom: 80px;
+      li{
+        &:before{
+          top: 22px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .toggle{
+    ul{
+      li{
+        &:before{
+          top: 22px;
+        }
+        a{
+          line-height: 18px;
+          padding: 20px;
+          &.active{
+            line-height: 18px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .toggle{
+    min-height:900px;
+    margin-bottom: 10px;
+    ul{
+      padding-left: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  .toggle-content {
+    padding: 20px 15px 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .toggle{
+    min-height: 1120px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .toggle-content{
+    h3{
+      font-size: 34px;
+    }
+  }
+  .toggle{
+    min-height: 1200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

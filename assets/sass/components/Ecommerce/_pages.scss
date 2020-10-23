@@ -1,0 +1,517 @@
+//04_shop_grid
+header{
+  .navigation_responsive{
+    height: 0px;
+  }
+}
+.filter_bar{
+  background: #384551;
+  border: 1px solid #384551;
+  border-radius: 10px;
+  height: 60px;
+  position: relative;
+  &:before{
+    content: "";
+    height: 76%;
+    position: absolute;
+    top:8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    border: 1px dashed #fff;
+    border-radius: 10px;
+  }
+  .default_sorting{
+    float: left;
+    a{
+      font-family: 'MouseMemoirsRegular';
+      float: left;
+      font-size: 20px;
+      color: #facf09;
+      padding-top: 16px;
+      padding-left: 30px;
+      position: relative;
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
+      &:after{
+        content: "\f0d7 ";
+        font-family: FontAwesome;
+        padding-left: 10px;
+        font-size: 16px;
+        color: #facf09;
+      }
+    }
+    .dropdown-menu{
+      &:before{
+        border: none !important;
+      }
+      &:after{
+        border: none !important;
+      }
+    }
+    &.open{
+      .dropdown-menu{
+        opacity: 1;
+        visibility: inherit;
+      }
+    }
+  }
+
+  .nav_fillter_bar{
+    float: right;
+    padding-right: 28px;
+    position: relative;
+    form{
+      button{
+        &.smallGrid{
+          background: none;
+          box-shadow: none;
+          width: 35px;
+          padding: 0;
+          height: 60px;
+          line-height: 60px;
+          border: none;
+          i{
+            color: #aeb1b6;
+            font-size: 18px;
+            &:active, &.active, &:focus, &:hover{
+              color: #facf09;
+            }
+          }
+          &:active, &.active, &:focus, &:hover{
+            outline: 0;
+          }
+        }
+        &.largeGrid{
+          background: none;
+          box-shadow: none;
+          width: 35px;
+          padding: 0;
+          height: 60px;
+          line-height: 60px;
+          border: none;
+          i{
+            color: #aeb1b6;
+            font-size: 18px;
+            &:active, &.active, &:focus, &:hover{
+              color: #facf09;
+            }
+          }
+          &:active, &.active, &:focus, &:hover{
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.filter_bar_04{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.products_04_shopgrid{
+  margin-top: 30px !important;
+  margin-bottom: 80px !important;
+}
+.pagination_shopgrid{
+  .pager{
+    margin: 0px !important;
+    ul{
+      margin-bottom: 0px !important;
+    }
+    li{
+      line-height: 60px;
+      color: #384551;
+      &.active{
+        a{
+          color: #e41d2e;
+          text-decoration: underline;
+        }
+      }
+      a{
+        border: none !important;
+        padding: 5px 5px !important;
+        font-family: 'MouseMemoirsRegular';
+        font-size: 24px;
+        color: #384551;
+      }
+      &.click{
+        a{
+          float: none !important;
+          width: 70px;
+          font-size: 0px;
+          height: 60px;
+        }
+        &.previous{
+          a{
+            margin-right: 90px;
+            background: url(../images/products/prev_v3.jpg) no-repeat;
+            transition: all 0.2s ease-out;
+            &:hover{
+              opacity: 0.5;
+            }
+          }
+        }
+        &.next{
+          a{
+            margin-left: 90px !important;
+            background: url(../images/products/next_v3.png) no-repeat;
+            transition: all 0.2s ease-out;
+            &:hover{
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.dropdown_shopgrid{
+  width: 200px;
+  padding-bottom: 30px !important;
+  li{
+    line-height: 40px;
+    a{
+      color: $gray-base !important;
+      font-size: 18px !important;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:after{
+        display: none;
+      }
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+/**********************/
+/* Responsive 04 *****/
+@media only screen and (max-width: 800px) {
+  .filter_bar_04{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .filter_bar{
+    margin-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .pagination_shopgrid{
+    .pager{
+      li{
+        &.click{
+          a{
+            margin-top: 12px;
+          }
+          &.previous{
+            a{
+              margin-right: 0px;
+              background-size: 80%;
+              float: left !important;
+            }
+          }
+          &.next{
+            a{
+              margin-left: 0px !important;
+              float: right !important;
+              padding: 0px !important;
+              width: 55px;
+              background-size: 100% 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .breadcrumb_04{
+    h2{
+      font-size: 45px;
+    }
+  }
+  .breadcrumbs{
+    .breadcrumb-links{
+      font-size: 13px;
+    }
+  }
+}
+
+
+/********************/
+//05_shop_grid
+/********************/
+.products_05_shopgrid{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+/********************/
+//06_shop_grid_colum3
+/********************/
+.content_blog_06{
+  margin-bottom: 80px;
+  .all_category{
+    .title_all_category{
+      font-family: 'MouseMemoirsRegular';
+      font-size: 30px;
+      color: #384551;
+      line-height: 60px;
+      background: url(../images/products/line_all_category.png) no-repeat scroll 0 50px;
+      background-position-y: 48px;
+    }
+  }
+.products_06_shopgrid{
+  margin-top: 30px !important;
+  margin-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+  .list_unstyled_06{
+      padding-top: 20px;
+      list-style: none;
+      li{
+        font-family: 'BellGothicStdBold';
+        padding-bottom: 10px;
+        padding-top: 16px;
+        font-size: 14px;
+        border-top: 1px solid #e1e1e1;
+        cursor: pointer;
+        &:hover, &:focus, &:active{
+          font-family: "BellGothicStdBlack";
+      }
+        &.level_1{
+          i{
+            float: right;
+          }
+        }
+        i{
+          display: none;
+        }
+        &.has-icon{
+          i{
+            display: block;
+          }
+        }
+        &.women{
+          padding-top: 0px !important;
+          border: none !important;
+        }
+        &.active{
+          font-family: 'BellGothicStdBlack';
+          font-size: 14px;
+          color: $link-color;
+          i {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            &:before {
+              content: "\f0d8";
+              position: absolute;
+              right: -5px;
+              top: 0px;
+              width: 20px;
+              height: 20px;
+            }
+          }
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        a{
+          text-decoration: none;
+          color: #384551;
+          i{
+            float: right;
+          }
+        }
+        ul{
+          display: none;
+          &.level_2{
+            padding-left: 0px;
+            padding-top: 5px;
+            list-style: none;
+            li{
+              border: none;
+              padding-left: 20px;
+              padding-bottom: 0px;
+              a{
+                float: none;
+              }
+            }
+          }
+        }
+      }
+  }
+}
+.top_sale{
+  .pro_top_sales_06{
+    .filter_product{
+      .caption_v2{
+        padding-left: 16px;
+      }
+    }
+  }
+}
+
+
+/******************/
+/* Responsive 06 shop grid */
+@media (max-width: 1025px) and (min-width: 1023px) {
+  .top_sale{
+    .pro_top_sales_06{
+      .filter_product{
+        .caption_v2{
+          .title_product{
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .content_blog_06{
+    .filter_by_price{
+      .filter-price{
+        .filter_now{
+          a{
+            background-size: 112px;
+            padding-right: 23px;
+            padding-top: 7px;
+            padding-left: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 999px) {
+  .pro_top_sales_06{
+    .filter_product{
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+/********************/
+//07_shop_grid
+/********************/
+.filter_by_price{
+  margin-bottom: 30px;
+  .f-price{
+    display: inline-block;
+    width: 100%;
+    .ui-widget-content{
+      height: 2px;
+      background: #E8E6E2 none repeat scroll 0% 0%;
+      position: relative;
+      .ui-slider-range{
+        height: 2px;
+        background: #212121;
+        position: absolute;
+      }
+    }
+    span{
+      strong{
+        &#amount{
+          color: #e85059;
+          font-family: 'BellGothicStdBlack';
+          font-size: 14px;
+          float: right;
+          padding-top: 15px;
+          margin-top: 18px;
+        }
+      }
+    }
+    button{
+      &.textup{
+        text-transform: uppercase;
+        margin-top: 18px;
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        float: left;
+        padding-right: 35px;
+        padding-left: 35px;
+        font-family: 'MouseMemoirsRegular';
+        font-size: 20px;
+        background: url(../images/icon/background_filter_now.png) no-repeat;
+        background-size: 100% 100%;
+        border: none;
+        &:focus, &:active, &:hover{
+          outline: aliceblue;
+          background: url(../images/products/product_detail/background_add_wishlist.png) no-repeat;
+          background-size: 100% 100%;
+          box-shadow: none;
+        }
+      }
+    }
+    .ui-state-default{
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: -6px;
+      transition: none 0s ease 0s;
+      border-radius: 50%;
+      background: #212121;
+    }
+  }
+  .title_all_category{
+    padding-bottom: 20px;
+  }
+}
+.by_brands{
+  .hermes{
+    padding-top: 0px !important;
+    border: none !important;
+  }
+  .number_by_brands{
+    float: right;
+  }
+}
+.by_color{
+  padding-top: 10px;
+}
+.by_size{
+  padding-top: 10px;
+}
+.no_item{
+  color: #373737;
+  opacity: 0.3;
+  font-family: 'BellGothicStdBold';
+  font-size: 14px;
+  padding-top: 25px;
+}
+.top_sale{
+  padding-top: 26px;
+  .title_top_sales{
+    padding-bottom: 30px;
+  }
+}
+
+
+/********************/
+/* Responsive 07 ****/
+.all_category_07{
+  margin-top: 10px;
+}
+@media (max-width: 1000px) {
+  .product_08_shopgrid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+/*****************/
+/* 08 shop grid */
+.product_08_shopgrid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}

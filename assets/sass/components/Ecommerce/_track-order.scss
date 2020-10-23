@@ -1,0 +1,146 @@
+.track_order{
+  margin-top: 77px;
+  margin-bottom: 77px;
+  text-align: center;
+  .page-title{
+    margin-bottom: 50px;
+    p{
+      font: 400 18px "BellGothicStdLight";
+      color: #384551;
+    }
+  }
+  .track-order{
+    .input-field{
+      label{
+        display: inherit;
+        max-width: 100%;
+        color: #384551;
+        font: 400 24px "MouseMemoirsRegular";
+        text-transform: uppercase;
+      }
+      input{
+        width: 430px;
+        height: 40px;
+        border: 1px solid #b5b5b5;
+        margin-bottom: 22px;
+        color: #384551;
+        &:focus{
+          outline: aliceblue;
+        }
+      }
+      .submit{
+        background: url(../images/products/product_detail/background_add_card.png) no-repeat;
+        border: none;
+        text-transform: uppercase;
+        font: 400 24px "MouseMemoirsRegular";
+        padding-left: 30px;
+        padding-right: 46px;
+        padding-top: 15px;
+        padding-bottom: 17px;
+        background-size: 150px 58px;
+        color: #fff;
+        &:hover, &:active, &:focus{
+          color: $gray-base;
+        }
+        &:focus{
+          outline: aliceblue;
+        }
+      }
+    }
+  }
+}
+
+
+
+/**************************************/
+/**** Responsive Track Order *********/
+@media only screen and (max-width:  774px) {
+  .track_order{
+    .page-title{
+      margin-bottom: 22px;
+      p{
+        font: 400 15px "BellGothicStdLight";
+        color: #384551;
+      }
+    }
+    .input-field{
+      label{
+        font: 400 20px "MouseMemoirsRegular";
+      }
+    }
+  }
+}
+@media only screen and (max-width: 641px) {
+  .track_order{
+    .page-title{
+      p{
+        font: 400 12px "BellGothicStdLight";
+        color: #384551;
+      }
+    }
+    .input-field{
+      label{
+        font: 400 16px "MouseMemoirsRegular" !important;
+      }
+    }
+    .track-order{
+      .input-field{
+        .submit{
+          font: 400 20px "MouseMemoirsRegular";
+          padding-left: 35px;
+          padding-top: 14px;
+          background-size: 144px 55px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .track_order{
+    margin-top: 45px;
+    margin-bottom: 50px;
+    .page-title{
+      p{
+        font: 400 11px "BellGothicStdLight";
+        color: #384551;
+      }
+    }
+    .input-field{
+      input{
+        width: 100% !important;
+        height: 35px !important;
+      }
+      label{
+        font: 400 14px "MouseMemoirsRegular" !important;
+      }
+    }
+    .track-order{
+      .input-field{
+        .submit{
+          font: 400 20px "MouseMemoirsRegular";
+          padding-left: 35px;
+          padding-top: 14px;
+          background-size: 144px 55px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,210 @@
+@media only screen and (min-width: 1199px) {
+  .signin{
+    padding-left: 30px;
+  }
+}
+.signin{
+  h2{
+    &.heading-title{
+      color: #384551;
+      font: 400 36px "MouseMemoirsRegular";
+      background: rgba(0, 0, 0, 0) url("../images/products/line_all_category.png") no-repeat scroll 0 78%;
+      background-position-y: 46px;
+      padding-bottom: 22px;
+      text-transform: uppercase;
+    }
+  }
+  p{
+    color: #888888;
+    font: 400 15px "BellGothicStdLight";
+  }
+  .social-signin{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    a{
+      padding: 14px 32px 14px 32px;
+      color: #fff;
+      font: 400 14px "BellGothicStdBold";
+      text-decoration: none;
+      &.facebook{
+        background-color: #3b5998;
+        &:hover, &:active, &:focus{
+          background: #55acee;
+        }
+      }
+      &.twitter{
+        margin-left: 5px;
+        background-color: #55acee;
+        &:hover, &:active, &:focus{
+          background: #3b5998;
+        }
+      }
+    }
+  }
+  .input-field{
+    label{
+      color: #384551;
+      font: 400 18px "MouseMemoirsRegular";
+      width: 100%;
+      text-transform: uppercase;
+      padding-bottom: 4px;
+      span{
+        &.star{
+          color: red;
+        }
+      }
+    }
+    input{
+      &.input-text
+      {
+        border: 1px solid #b5b5b5;
+        font: 400 14px "BellGothicStdLight";
+        padding-left: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 40px;
+        color: #384551;
+        &:focus{
+          outline: aliceblue;
+        }
+      }
+    }
+    .checkbox{
+      display: inline-block;
+      label{
+        color: #888888;
+        font: 400 14px "BellGothicStdLight";
+        text-transform: capitalize;
+        position: relative;
+        padding-left: 30px;
+        &:before{
+          content: "";
+          width: 20px;
+          height: 20px;
+          border: 1px solid #B5B5B5;
+          display: block;
+          position: absolute;
+          left: 0px;
+        }
+      }
+      input{
+        display: none;
+        &:checked{
+          + label{
+            &:before{
+              content: "\f00c";
+              display: inline-block;
+              font: 400 16px "FontAwesome";
+              color: #384551;
+            }
+          }
+        }
+      }
+    }
+    a{
+      text-decoration: none;
+      &.fogot{
+        float: right;
+        font: 400 14px "BellGothicStdLight";
+        color: #e41d2e;
+        line-height: 1.2;
+        text-align: left;
+        padding-top: 15px;
+        &:hover{
+          color: #384551;
+        }
+      }
+    }
+    .input-submit{
+      margin-top: 30px;
+      a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font: 400 24px "MouseMemoirsRegular";
+        background: url(../images/products/product_detail/background_add_card.png) no-repeat;
+        padding-left: 38px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-top: 15px;
+        background-size: 150px 60px;
+        &:hover, &:focus, &:active{
+          background: url(../images/products/product_detail/background_add_wishlist.png) no-repeat;
+          background-size: 150px 60px;
+        }
+      }
+    }
+  }
+}
+.register{
+  margin-bottom: 148px;
+  padding-right: 30px;
+  p{
+    padding-bottom: 15px;
+  }
+  input{
+    &:checked{
+      + label{
+        &:before{
+          color: #e41d2e !important;
+        }
+      }
+    }
+  }
+  .input-submit{
+    margin-bottom: 40px;
+    margin-top: 10px !important;
+    a{
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+    }
+  }
+  .signup-today{
+    .input-field{
+      .checkbox{
+        label{
+          color: #384551;
+          font: 400 14px "BellGothicStdBlack";
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .signin{
+    padding-left: 0px;
+    h2{
+      &.heading-title{
+        font-size: 28px;
+        background-position-y: 32px;
+      }
+    }
+    .social-signin{
+      a{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        &.twitter{
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .signin h2{
+    &.heading-title{
+      margin-top: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .signin h2{
+    &.heading-title{
+      font-size: 25px;
+      background-position-y: 35px;
+    }
+  }
+}

@@ -1,0 +1,278 @@
+.main_content_404{
+  text-align: center;
+  .p404{
+    margin-top: 65px;
+    color: #e41d2e;
+    font: 400 250px "MouseMemoirsRegular";
+    line-height: 185px;
+  }
+  p{
+    &.note{
+      color: #384551;
+      font: 400 48px "KingCoolKC";
+    }
+  }
+  p{
+    &.solution{
+      padding-top: 45px;
+      padding-bottom: 45px;
+      .please{
+        color: #e41d2e;
+        font: 400 18px "BellGothicStdLight";
+        padding-right: 24px;
+      }
+      .home_page{
+        a{
+          color: #ffffff;
+          font: 400 24px "MouseMemoirsRegular";
+          background: url(../images/products/product_detail/background_add_wishlist.png) no-repeat;
+          padding-left: 38px;
+          padding-right: 45px;
+          padding-top: 15px;
+          padding-bottom: 20px;
+          background-size: 156px 60px;
+          text-decoration: none;
+          border: 0px;
+          &:focus, &:active, &:hover{
+            background: url(../images/products/product_detail/background_add_card.png) no-repeat;
+            color: $gray-base;
+            background-size: 156px 60px;
+          }
+        }
+      }
+    }
+  }
+  .input-group{
+    width: 65%;
+    margin-left: 18%;
+    height: 55px;
+    margin-bottom: 130px;
+    background: url("../images/blog/background_input_404.png") no-repeat;
+    background-size: 100%;
+    input{
+      background: none;
+      border: none;
+      padding-top: 34px;
+      box-shadow: none;
+      font: 400 18.35px "KingCoolKC";
+      padding-left: 20px;
+      color: $gray-base;
+      padding-bottom: 10px;
+      opacity: 0.5;
+    }
+    span{
+      button{
+        margin-left: -1px;
+        padding-top: 12px;
+        padding-left: 77px;
+        padding-right: 55px;
+        padding-bottom: 15px;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font: 400 26px "MouseMemoirsRegular";
+        text-transform: uppercase;
+        &:hover, &:active, &:focus{
+          box-shadow: none;
+          outline: none;
+          background: none;
+          color: $gray-base;
+        }
+      }
+    }
+  }
+}
+
+/*******************************************/
+/********* Respinsive 404 pages ***********/
+@media only screen and (max-width: 1190px) {
+  .main_content_404{
+    .input-group{
+      span{
+        button{
+          padding-top: 4px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main_content_404{
+    .p404{
+      font-size: 220px;
+    }
+    p{
+      &.note{
+        font-size: 38px;
+      }
+    }
+    .input-group{
+      background-size: 100% 52px;
+      input{
+        padding-top: 30px;
+      }
+      span{
+        button{
+          padding-right: 25px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main_content_404{
+    .p404{
+      margin-top: 0px;
+      font-size: 220px;
+    }
+    p{
+      &.note{
+        font-size: 30px;
+      }
+    }
+    .input-group{
+      background-size: 100% 52px;
+      margin-left: 10%;
+      width: 80%;
+      margin-bottom: 80px;
+      span{
+        button{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main_content_404{
+    .p404{
+      font-size: 200px;
+    }
+    p{
+      &.note{
+        font-size: 24px;
+      }
+      &.solution{
+        padding-top: 15px;
+        padding-bottom: 60px;
+        span{
+          &.home_page{
+            display: block;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+
+    .input-group{
+      background-size: 100% 50px;
+      margin-left: 2%;
+      width: 98%;
+      span{
+        button{
+          font-size: 18px;
+          padding-right: 18%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .main_content_404{
+    p{
+      &.note{
+        font-size: 22px;
+      }
+    }
+    p{
+      &.solution{
+        .please{
+          font-size: 16px;
+        }
+        .home_page{
+          a{
+            font-size: 22px;
+            background-size: 140px 60px;
+            width: 100%;
+            padding-left: 38px;
+            padding-right: 36px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .input-group{
+      background-size: 100% 45px;
+      input{
+        padding-top: 26px;
+      }
+      span{
+        button{
+          padding-top: 0px;
+          padding-right: 13%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .main_content_404{
+    .p404{
+      font-size: 170px;
+      line-height: 150px;
+    }
+    p{
+      &.note{
+        font-size: 20px;
+      }
+    }
+    p{
+      &.solution{
+        .please{
+          font-size: 14px;
+        }
+        .home_page{
+          a{
+            font-size: 20px;
+            background-size: 125px 55px;
+            width: 100%;
+            padding-left: 34px;
+            padding-right: 28px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .input-group{
+      background-size: 100% 45px;
+      input{
+        padding-top: 26px;
+      }
+      span{
+        button{
+          padding-top: 0px;
+          padding-right: 12%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

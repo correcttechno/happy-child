@@ -1,0 +1,357 @@
+.linhnguyen-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0,0,0,.8);
+  z-index: 10050;
+  display: none;
+  top: 0;
+  left: 0;
+}
+.linhnguyen-modal {
+  visibility: hidden;
+  text-align:center;
+  top: 230px;
+  left: 42%;
+  margin-left: -300px;
+  width: 900px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 10052;
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+  -box-shadow: 0 0 10px rgba(0,0,0,.4);
+  img{
+    width: 100%;
+  }
+}
+.linhnguyen-modal{
+  .close-linhnguyen-modal {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
+    cursor: pointer;
+    i{
+      font-size: 28px;
+      &:hover, &:focus, &:active{
+        color: $link-color;
+      }
+    }
+  }
+}
+.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+#myModal{
+  h3{
+    color: #e41d2e;
+    font: 400 60px "MouseMemoirsRegular";
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .contact_popup{
+    color: #888888;
+    font: 400 16px "BellGothicStdLight";
+    padding-bottom: 20px;
+  }
+  .input-group{
+    border: none;
+    background: url('../images/newletter/input_popup.png') no-repeat;
+    height: 57px;
+    width: 665px;
+    background-size: 100% 57px;
+    left: 16%;
+    margin-bottom: 20px;
+    input{
+      background: none;
+      background-color: none;
+      border: none;
+      box-shadow: none;
+      font: 400 18.35px "KingCoolKC";
+      padding-top: 14px;
+      height: 57px;
+      text-transform: uppercase;
+      color: $gray-base;
+    }
+    span{
+      padding-left: 35px;
+      padding-right: 32px;
+      button{
+        border: none;
+        background: none;
+        background-color: none;
+        box-shadow: none;
+        padding-top: 0px;
+        color: #fff;
+        font: 400 26px "MouseMemoirsRegular";
+        outline: aliceblue;
+        &:hover, &:focus, &:active{
+          color: $gray-base;
+        }
+      }
+    }
+  }
+  .checkbox_popup{
+    input{
+      display: none;
+      border: none;
+      &:checked{
+        + label{
+          &:after{
+            content: "\f00c";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 16px;
+            color: #212121;
+            position: absolute;
+            top: 15%;
+            left: 38%;
+          }
+        }
+      }
+    }
+    label{
+      color: #888888;
+      font: 400 15px "BellGothicStdLight";
+      padding-left: 30px;
+      &:before{
+        display: block;
+        width: 18px;
+        height: 18px;
+        left: 38%;
+        border: 1px solid #B5B5B5;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+ /**********************************************/
+/*********** Responsive popup newletter********/
+@media only screen and (max-width: 1440px) {
+  .linhnguyen-modal{
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .linhnguyen-modal{
+    width: 600px;
+    margin-left: -31%;
+    top: 150px;
+  }
+  #myModal{
+    h3{
+      padding-bottom: 0px;
+      padding-top: 35px;
+    }
+    .contact_popup{
+      font-size: 13px;
+    }
+    .input-group{
+      left: 12%;
+      width: 460px;
+      background-size: 100% 50px;
+      input{
+        width: 350px;
+        font-size: 16px;
+        padding-top: 8px;
+      }
+      span{
+        padding-left: 10px;
+        padding-right: 10px;
+        button{
+          font-size: 18px;
+          left: -10px;
+          top: -3px;
+        }
+      }
+    }
+    .checkbox_popup{
+      label{
+        &:before{
+          left: 33%;
+        }
+      }
+    }
+  }
+}
+@media only screen and(max-width: 737px) {
+  .linhnguyen-modal{
+    margin-left: -238px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .linhnguyen-modal{
+    margin-left: -250px;
+  }
+}
+@media only screen and (max-width: 732px) {
+  .linhnguyen-modal{
+    margin-left: -245px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .linhnguyen-modal{
+    width: 400px;
+    margin-left: -166px;
+    top: 150px;
+  }
+  #myModal{
+    h3{
+      padding-bottom: 0px;
+      padding-top: 35px;
+    }
+    .contact_popup{
+      font-size: 13px;
+    }
+    .input-group{
+      left: 3%;
+      width: 375px;
+      background-size: 100% 50px;
+      input{
+        width: 285px;
+        font-size: 16px;
+        padding-top: 8px;
+      }
+      span{
+        padding-left: 10px;
+        padding-right: 10px;
+        button{
+          font-size: 18px;
+          left: -3px;
+          top: -3px;
+        }
+      }
+    }
+    .checkbox_popup{
+      label{
+        &:before{
+          left: 24%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 430px) {
+  .linhnguyen-modal{
+    width: 300px;
+    margin-left: -120px;
+    top: 60px;
+  }
+  #myModal{
+    h3{
+      padding-bottom: 0px;
+      padding-top: 35px;
+    }
+    .contact_popup{
+      font-size: 13px;
+    }
+    .input-group{
+      left: 3%;
+      width: 280px;
+      background-size: 100% 50px;
+      input{
+        width: 190px;
+        font-size: 16px;
+        padding-top: 8px;
+      }
+      span{
+        padding-left: 10px;
+        padding-right: 10px;
+        button{
+          font-size: 16px;
+          left: 8px;
+          top: -3px;
+        }
+      }
+    }
+    .checkbox_popup{
+      label{
+        &:before{
+          left: 17%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 415px) {
+  .linhnguyen-modal{
+    margin-left: -115px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .linhnguyen-modal{
+    margin-left: -124px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

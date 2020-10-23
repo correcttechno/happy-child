@@ -1,0 +1,821 @@
+/** 6.5.1. General **/
+
+/** 6.5.2. Footer Version 1 **/
+#footer {
+    overflow: hidden;
+    position: relative;
+    &:before{
+        content:'';
+        @include absolute(top 0 right 0 bottom 0 left 0);
+        top: 0;
+        right: -400px;
+        bottom: -400px;
+        left: -400px;
+        position: absolute;
+        display: block;
+        z-index: 0;
+        background: #a77bca;
+        margin-top: 80px;
+        @include transform(rotateZ(3deg));
+    }
+    .container{
+        .SignUp{
+            position: relative;
+            z-index: 1;
+            background: url(../images/footer/background_conn_03.jpg);
+            padding-left: 30px;
+            padding-right: 30px;
+            .connect{
+                padding-top:75px;
+                display: inline-flex;
+                .title_conn{
+                    font-family: 'MouseMemoirsRegular';
+                    font-size: 28.89px;
+                    color: #e4022d;
+                    padding-right: 39px;
+                }
+                .img_conn{
+                    padding-top: 5px;
+                    img{
+                        padding-right: 25px;
+                        transform: translate3d(0,0,0);
+                        transition: all 0.2s ease;
+                        &:hover{
+                            transform: translate3d(0,-6px,0);
+                        }
+                    }
+                    &.img_last{
+                        padding-right: 0px;
+                    }
+                }
+            }
+
+        }
+        .information-diferent{
+            padding-top: 20px;
+            padding-bottom: 80px;
+            color: #fff;
+            background: url(../images/footer/line_footer.png);
+            position: relative;
+            background-repeat: repeat-x;
+            background-position: 25% 90%;
+            .about_us{
+                padding-bottom: 20px;
+                h1{
+                    font-family: 'MouseMemoirsRegular';
+                    padding-bottom: 12px;
+                }
+                ul{
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                            font-family: 'BellGothicStdBold';
+                            font-size: 18px;
+                            padding-bottom: 10px;
+                            line-height: 43px;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                padding-left: 3px;
+                                color: $link-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .our_instogram{
+                a{
+                    u{
+                        font: 400 14px "BellGothicStdBold";
+                    }
+                }
+                .img_info_client{
+                    float: left;
+                    padding-bottom: 15px;
+                    width: 100%;
+                    display: block;
+                    a{
+                        display: block;
+                        float: left;
+                        img{
+                            margin-right: 15px;
+                            &.img_end{
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: $link-color;
+                    }
+                }
+            }
+        }
+        .pay_cart{
+            padding-bottom : 44px;
+            .source{
+                font-family: 'BellGothicStdBold';
+                font-size: 16px;
+                color: #fff;
+            }
+            .cart{
+                cursor: auto;
+                img{
+                    float: right;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+.order{
+    padding-top:37px;
+    p.order-post-title{
+        line-height: 15px;
+        font-family: 'MouseMemoirsRegular';
+        font-size: 30px;
+        color: #e4022d;
+    }
+    p.order-contact{
+        color: #333333;
+        font-family: 'BellGothicStdLight';
+        font-size: 18px;
+    }
+    .input-group{
+        padding-bottom: 35px;
+        width: 85%;
+        background: url(../images/footer/background_input.png) no-repeat;
+        background-size:100%;
+        input{
+            &.form-control{
+                text-transform: uppercase;
+                font: 400 18px "KingCoolKC";
+                padding-top: 3%;
+                height: 60px;
+                border: none !important;
+                box-shadow: none !important;
+                background: none !important;
+                color: #fff;
+            }
+        }
+        span{
+            button{
+                text-transform: uppercase;
+                font-family: 'KingCoolKC';
+                font-size: 24px;
+                padding-left: 45px;
+                color: #fff;
+                height: 47px;
+                top: -6px;
+                border: none;
+                &.btn{
+                    padding-right: 40px;
+                    background: none !important;
+                    padding-bottom: 0px;
+                    &:focus, &:hover, &:active{
+                        outline: none !important;
+                        box-shadow: none !important;
+                        color: $gray-base;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.btn_v1{
+    &:hover, &:active{
+        background: url(../images/footer/background_submit.png) no-repeat !important;
+        border-color: none !important;
+    }
+}
+/** 6.5.3. Footer Version 2 **/
+.footer_v2 {
+    background: #384551 !important;
+    &:before{
+        background: #384551 !important;
+    }
+}
+.footer_v3{
+    background:url(../images/footer/background_footer_v3.jpg) !important ;
+}
+.about_us{
+    ul{
+        li{
+            transition: all 0.3s ease;
+            &.place{
+                padding-top: 10px;
+                &:hover, &:active{
+                    padding-left: 3px;
+                }
+            }
+            .img_place{
+                float: left;
+                display: block;
+            }
+            .text_place{
+                display: -webkit-box;
+                padding-left: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+.about_us_v3{
+    ul{
+        li{
+            &:hover, &:active{
+                padding-left: 3px;
+            }
+            padding-bottom: 30px;
+            .img_place{
+                margin-top: -10px;
+            }
+            a{
+                &:hover, &:active{
+                    color: red;
+                    padding-left: 0px !important;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    ul.connect_about_us{
+        li{
+            float: left;
+            padding-right: 25px;
+            a{
+                img{
+                    transition: all 0.3s ease;
+                    transform: translate(0px, 0px);
+                    transition: all 0.3s ease;
+                }
+            }
+            &:hover{
+                padding-left: 0px !important;
+                a{
+                    img{
+                        transform: translate(0px,-5px);
+                    }
+                }
+
+            }
+        }
+    }
+}
+/*********************/
+/* Style scroll top */
+.btn-top {
+    background-image: url('../images/icon/scroll_top.png');
+    background-repeat: no-repeat;
+    border: medium none;
+    bottom: 30px;
+    cursor: pointer;
+    display: none;
+    height: 62px;
+    outline: medium none;
+    padding: 0;
+    position: fixed;
+    right: 15px;
+    width: 65px;
+    z-index: 9999;
+    &:hover{
+        height: 70px;
+        background-size: 100% 100%;
+        width: 70px;
+    }
+}
+.btn-top{
+    &.position{
+        position:absolute;
+        right:15px;
+        bottom:300px;
+    }
+}
+//Responsive scroll top
+@media only screen and (min-width: 900px) and (max-width: 1025px){
+    .btn-top{
+        display: none !important;
+    }
+    .footer_v3{
+        .about_us{
+            &:nth-child(4){
+                clear: both;
+            }
+        }
+    }
+}
+
+//Responsive v1
+@media only screen and (min-width: 1000px) and (max-width: 1025px) {
+    #footer {
+        .container {
+            .SignUp {
+                .connect {
+                    padding-top: 22px;
+                    .img_conn{
+                        display: block;
+                        padding-top: 15px;
+                    }
+                }
+                .order{
+                    .input-group{
+                        span{
+                            button{
+                                &.btn{
+                                    position: absolute;
+                                    top: -6px;
+                                    left: -122px !important;
+                                    font-size: 22px !important;
+                                }
+                            }
+                        }
+                        input{
+                            &.form-control{
+                                padding-top: 0px;
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 990px) {
+    #footer{
+        .container{
+            .SignUp{
+                text-align: center;
+                .order{
+                    .input-group{
+                        margin-left: 50px;
+                        margin-bottom: 20px;
+                        input{
+                            &.form-control{
+                                padding-top: 5%;
+                                width: 94%;
+                            }
+                        }
+                        span{
+                            &.input-group-btn{
+                                button{
+                                    &.btn{
+                                        top: 0px;
+                                        left: -15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .information-diferent{
+                background-position: 25% 96%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    #footer{
+        .container{
+            .SignUp{
+                text-align: center;
+                .connect{
+                    padding-left: 19%;
+                    padding-top: 40px;
+                }
+            }
+            .information-diferent{
+                padding-bottom: 40px;
+                background-position: 26% 98%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 665px) and (max-width: 770px) {
+    #footer{
+        .container{
+            .SignUp{
+                .connect{
+                    padding-left: 17%;
+                }
+                text-align: center;
+                .order{
+                    .input-group{
+                        margin-left: 50px;
+                        margin-bottom: 20px;
+                        span{
+                            &.input-group-btn{
+                                button{
+                                    &.btn{
+                                        top: -1px;
+                                        left: -10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .pay_cart{
+                padding-bottom: 30px;
+                text-align: center;
+                .source{
+                    padding-top: 15px;
+                }
+                .cart{
+                    margin-top: 15px;
+                    img{
+                        float: none !important;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 630px) {
+    #footer{
+        .container{
+            .SignUp{
+                .order{
+                    .input-group{
+                        width: 100%;
+                        input{
+                            &.form-control{
+                                padding-top: 6%;
+                            }
+                        }
+                        span{
+                            &.input-group-btn{
+                                button{
+                                    &.btn{
+                                        top: -6px;
+                                        left: -5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 650px) {
+    #footer{
+        .container{
+            .SignUp{
+                .connect{
+                    padding-left: 15%;
+                }
+                .order{
+                    .input-group{
+                        margin-left: 50px;
+                        span{
+                            button{
+                                &.btn{
+                                    position: absolute;
+                                    top: 1px;
+                                    left:-140px;
+                                }
+                            }
+                        }
+                        input{
+                            &.form-control{
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    #footer{
+        .container{
+            .information-diferent{
+                .about_us{
+                    width: 50%;
+                }
+                .about_us2_v3{
+                    padding-bottom: 80px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 650px) {
+    #footer{
+        .container{
+            .information-diferent{
+                .about_us{
+                    width: 50%;
+                }
+            }
+            .pay_cart{
+                padding-bottom: 30px;
+                .source{
+                    padding-top: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .cart{
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 15px;
+                    img{
+                        float: none;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    #footer .container {
+        .SignUp {
+            text-align: center;
+            .order {
+                .input-group {
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    margin-left: 0px;
+                    input {
+                        &.form-control {
+                            padding-top: 3%;
+                            width: 70%;
+                        }
+                    }
+                    span {
+                        &.input-group-btn{
+                            button.btn {
+                                position: absolute;
+                                top: 1px;
+                                left: -140px;
+                            }
+                        }
+                    }
+                }
+            }
+            .connect{
+                padding-left: 15px;
+                display: block;
+                .title_conn{
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                .img_conn{
+                    img{
+                        &.img_last{
+                            padding-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .pay_cart{
+            text-align: center;
+            width: 100%;
+            padding-bottom: 30px;
+            .cart{
+                margin-top: 20px;
+                text-align: center;
+                img{
+                    float: none;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    #footer{
+        .container{
+            .SignUp{
+                .order{
+                    .input-group{
+                        background-size: 100% 55px;
+                        input{
+                            &.form-control{
+                                padding-top: 6% !important;
+                                width: 70%;
+                            }
+                        }
+                        span{
+                            &.input-group-btn{
+                                button{
+                                    &.btn{
+                                        position: absolute;
+                                        top: 0px;
+                                        left: -116px ;
+                                        font-size: 20px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 436px) {
+    #footer{
+        .container{
+            .SignUp{
+                text-align: center;
+                .connect{
+                    padding-top: 30px;
+                    .title_conn{
+                        padding-right: 0px;
+                    }
+                    .img_conn{
+                        display: block;
+                        text-align: center;
+                        img{
+                            padding-top: 12px;
+                            display: inline-flex;
+                            padding-right: 22px;
+                        }
+                    }
+                }
+                .order{
+                    .input-group{
+                        width: 100%;
+                    }
+                }
+            }
+            .information-diferent{
+                background-position: 25% 97%;
+                padding-bottom: 62px;
+            }
+            .pay_cart{
+                .source{
+                    text-align: center;
+                }
+                .cart{
+                    text-align: center;
+                    img{
+                        float: none;
+                        padding: 0 10px 0 10px;
+                        padding-left: 10px !important;
+                        padding-right: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    #footer{
+        .container{
+            .SignUp{
+                .connect{
+                    .title_conn{
+                        font-size: 26px;
+                    }
+                    .img_conn{
+                        img{
+                            padding-right: 12px;
+                        }
+                    }
+                }
+                .order{
+                    p{
+                        &.order-post-title{
+                            font-size: 26px;
+                            line-height: 18px;
+                        }
+                        &.order-contact{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 361px) {
+    #footer{
+        .container{
+            .SignUp{
+                .order{
+                    .input-group{
+                        input{
+                            &.form-control{
+                                padding-top: 6% !important;
+                                width: 70%;
+                            }
+                        }
+                        span{
+                            &.input-group-btn{
+                                button{
+                                    &.btn{
+                                        position: absolute;
+                                        top: 0px;
+                                        left: -108px;
+                                        font-size: 18px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .container{
+            .information-diferent{
+                .our_instogram{
+                    a{
+                        u{
+                            font: 400 14px "BellGothicStdBold";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 321px) {
+    #footer{
+        .container{
+            .pay_cart{
+                text-align: center;
+                width: 100%;
+                .cart{
+                    text-align: center;
+                        img{
+                            float: none;
+                            padding-left: 5px !important;
+                            padding-right: 5px !important;
+                        }
+                }
+            }
+            .SignUp{
+                .order{
+                    .input-group{
+                        background-size: 100% 40px;
+                        input{
+                            &.form-control{
+                                padding-top: 4px !important;
+                                font-size: 12px;
+                            }
+                        }
+                        span{
+                            &.input-group-btn{
+                                button{
+                                    &.btn{
+                                        position: absolute;
+                                        top: -7px;
+                                        left: -97px;
+                                        font-size: 15px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*********************************/
+/*******Responsive v3************/
+/********************************/
+@media only screen and (max-width: 600px) and (min-width: 560px){
+    #footer{
+        .container{
+            .pay_cart{
+                text-align: center;
+                .cart{
+                    margin-top: 15px;
+                        img{
+                            float: none;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                        }
+                }
+            }
+        }
+    }
+}

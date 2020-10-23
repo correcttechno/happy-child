@@ -1,0 +1,240 @@
+.wishlist{
+  margin-bottom: 60px;
+  table{
+    thead{
+      tr{
+        th{
+          &.stock_status{
+            text-align: center;
+          }
+        }
+      }
+    }
+    tbody{
+      tr{
+        .stock{
+          vertical-align: middle;
+          text-align: center;
+          text-transform: uppercase;
+          padding-top: 46px;
+          color: #e41d2e;
+          font: 400 24px "BellGothicStdBold";
+        }
+        td{
+          &.add_to_cart{
+            .add_cart{
+              font: 400 24px "MouseMemoirsRegular";
+              cursor: pointer;
+              background: url(../images/icon/background_filter_now.png) no-repeat;
+              text-decoration: none;
+              color: #fff;
+              padding-left: 30px;
+              padding-right: 55px;
+              padding-top: 13px;
+              padding-bottom: 27px;
+              text-transform: uppercase;
+              background-size: 150px;
+              float: right;
+              margin-top: 40px;
+              transition: all 0.3s ease;
+              &:hover, &:focus, &:active{
+                color: $gray-base;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**************************************/
+/***** Responsive 18 Wishlist ********/
+
+@media only screen and (max-width: 775px) and (min-width: 667px){
+  #main-container{
+    form{
+      &.wishlist{
+        .table-responsive{
+          table{
+            tbody{
+              tr{
+                .product-name{
+                  a{
+                    span{
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .wishlist{
+    table{
+      tbody{
+        tr{
+          .stock{
+            font-size: 14px;
+            padding-top: 52px;
+          }
+          td{
+            &.add_to_cart{
+              .add_cart{
+                font: 400 20px "MouseMemoirsRegular";
+                margin-bottom: 30px;
+                background-size: 143px;
+                padding-left: 33px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 668px) and (min-width: 568px){
+  #main-container{
+    form{
+      &.wishlist{
+        .table-responsive{
+          table{
+            tbody{
+              tr{
+                .product-name{
+                  a{
+                    span{
+                      font-size: 13px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .wishlist{
+    table{
+      tbody{
+        tr{
+          .stock{
+            font-size: 13px;
+            padding-top: 52px;
+          }
+          td{
+            &.add_to_cart{
+              .add_cart{
+                font: 400 18px "MouseMemoirsRegular";
+                margin-bottom: 30px;
+                background-size: 115px;
+                padding-left: 25px;
+                padding-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 569px) {
+  .wishlist{
+    table{
+      tbody{
+        tr{
+          .stock{
+            position: absolute;
+            left: 120px;
+            padding-top: 35px;
+            font: 400 14px "BellGothicStdBold";
+          }
+          td{
+            &.add_to_cart{
+              .add_cart{
+                position: absolute;
+                left: 120px;
+                top: 30px;
+                font-size: 15px;
+                background-size: 100px;
+                padding-top: 9px;
+                padding-left: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 321px) {
+  #main-container{
+    form{
+      &.wishlist{
+        .table-responsive{
+          table{
+            tbody{
+              tr{
+                .stock{
+                  font-size: 12px;
+                }
+                .product-name{
+                  a{
+                    span{
+                      position: absolute;
+                      left: 92px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .wishlist{
+    table{
+      tbody{
+        tr{
+          .stock{
+            position: absolute;
+            left: 112px;
+          }
+          td{
+            &.add_to_cart{
+              .add_cart{
+                left: 112px;
+                top: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

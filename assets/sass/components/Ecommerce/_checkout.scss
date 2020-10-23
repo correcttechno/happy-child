@@ -1,0 +1,409 @@
+.main_content_checkout{
+  ul{
+    list-style: none;
+  }
+  margin-bottom: 80px;
+  p{
+    &.return{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      span{
+        font-family: 'BellGothicStdBold';
+        font-size: 15px;
+        color: #384551;
+      }
+      u{
+        a{
+          color: #e41d2e;
+          font-size: 15px;
+          font-family: 'BellGothicStdBlack' !important;
+        }
+      }
+    }
+  }
+  .billing-fields-1{
+    h2{
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  .billing_block2{
+    h2{
+      margin-top: 35px;
+    }
+  }
+  .billing-fields{
+    h2{
+      color: #384551;
+      font-size: 30px;
+      font-family: 'MouseMemoirsRegular';
+      text-transform: uppercase;
+    }
+    .input-field{
+      label{
+        font-family: 'MouseMemoirsRegular';
+        font-size: 20px;
+        color: #384551;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 100%;
+      }
+      .start_checkout{
+        color: #e41d2e;
+      }
+      .selectbox{
+        select{
+          background: url("../images/icon/bg-select.jpg") no-repeat;
+          background-position: center right;
+          padding-right: 40px;
+          padding-left: 15px;
+          width: 100%;
+          position: relative;
+          z-index: 1;
+          outline: medium none;
+          color: #B5B5B5;
+          letter-spacing: 0.5px;
+          height: 38px;
+          font-weight: normal;
+          font-family: 'BellGothicStdBold';
+          font-size: 14px;
+          -webkit-appearance: none;
+          option{
+            padding: 5px 10px;
+            border: medium none;
+            text-align: left;
+          }
+        }
+        }
+      }
+    .input-field{
+      margin-bottom: 10px;
+      input{
+        border: 1px solid #b5b5b5;
+        padding: 8px 15px;
+        font-size: 14px;
+        color: #757575;
+        border-radius: 0px;
+        font-family: 'BellGothicStdBold';
+        height: 38px;
+        width: 100%;
+        margin-bottom: 15px;
+        &:focus {
+          outline-offset: 0px;
+          box-sizing: none;
+          outline: aliceblue;
+        }
+      }
+
+      textarea{
+        width: 100%;
+        font: 400 14px "BellGothicStdBold";
+        padding-left: 22px;
+        color: #0f0f0f;
+        &:focus{
+          outline: aliceblue;
+        }
+      }
+    }
+  }
+}
+.billing_block2{
+  border: 5px solid #ebebeb;
+  padding: 0px 25px 75px 25px;
+  h2{
+    border-bottom: 1px solid #ebebeb;
+  }
+  .input-field{
+    label{
+      font-family: 'MouseMemoirsRegular';
+      font-size: 24px;
+      border-bottom: 1px solid #ebebeb;
+      padding-top: 22px;
+      .country{
+        float: left;
+      }
+      .totals{
+        float: right;
+        padding-right: 15px;
+      }
+    }
+    p{
+      line-height: 0px;
+      padding-top: 35px;
+      span{
+        font-size: 18px;
+        font-family: 'BellGothicStdBold';
+        color: #384551;
+        &.navy{
+          float: left;
+          .number_navy{
+            color: #e41d2e;
+          }
+        }
+        &.price_navy{
+          float: right;
+          padding-right: 15px;
+          font-family: 'KingCoolKC';
+          font-size: 30px;
+        }
+      }
+      &.p_border{
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 35px;
+      }
+    }
+
+  }
+  .price_totals{
+    font-family: 'KingCoolKC';
+    font-size: 30px;
+    float: right;
+    padding-right: 15px;
+  }
+  .free_shiping{
+    font-size: 17.99px;
+    font-family: 'BellGothicStdBold';
+    text-transform: capitalize !important;
+    float: right;
+  }
+  .price_order_color{
+    color: #e41d2e;
+    font-family: 'KingCoolKC';
+    font-size: 30px;
+    float: right;
+    padding-right: 15px;
+  }
+}
+.deffirent_address{
+  label{
+    font: 400 30px "MouseMemoirsRegular";
+    color: #384551;
+  }
+}
+.payment_methods{
+  a{
+    width: 200px;
+    &.place_order{
+      font: 400 24px "MouseMemoirsRegular";
+      text-transform: uppercase;
+      background: url(../images/products/product_detail/background_add_card.png) no-repeat;
+      height: 58px;
+      color: #fff;
+      text-decoration: none;
+      padding-right: 92px;
+      padding-bottom: 44px;
+      padding-left: 38px;
+      padding-top: 14px;
+      margin-bottom: 40px;
+      background-size: 160px 60px;
+      &:hover, &:focus, &:active{
+        background: url(../images/products/product_detail/background_add_wishlist.png) no-repeat;
+        background-size: 160px 60px;
+      }
+    }
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+    li{
+      .checkbox{
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 4px;
+        margin-bottom: 20px;
+        input{
+          display: none;
+          &:checked{
+            + label{
+              &:after{
+                content: "\f00c";
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: 16px;
+                color: #212121;
+                position: absolute;
+                top: 30%;
+                left: 2px;
+              }
+            }
+          }
+        }
+        label{
+          width: 100%;
+          position: relative;
+          color: #384551;
+          font-size: 24px;
+          font-family: 'MouseMemoirsRegular';
+          padding-left: 30px;
+          margin-bottom: 7px;
+          &:before{
+            display: block;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #B5B5B5;
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+        }
+      }
+      .payment-box{
+        p{
+          color: #384551;
+          font-size: 16px;
+          font-family: 'BellGothicStdLight';
+          border-bottom: 1px solid #ebebeb;
+          padding-bottom: 29px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .paypal-method{
+      .checkbox{
+        img{
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+        a{
+          font-size: 12px;
+          font-family: 'BellGothicStdBold';
+          color: #e41d2e;
+        }
+      }
+      p{
+        color: #384551;
+        font: 400 14px "BellGothicStdLight";
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+.checkbox_acount{
+  input{
+    margin-left: 0px !important;
+    display: none;
+    &:checked{
+      + label{
+        &:after{
+          content: "\f00c";
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 16px;
+          color: #212121;
+          position: absolute;
+          top: 15%;
+          left: 2px;
+        }
+      }
+    }
+  }
+  label{
+        font: 400 14px "BellGothicStdBold";
+        color: #384551;
+        padding-left: 30px;
+        &:before{
+          display: block;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #B5B5B5;
+          content: "";
+          position: absolute;
+          left: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+   }
+}
+.deffirent_address{
+  margin-top: 50px !important;
+  margin-bottom: 45px !important;
+  &.checkbox_acount{
+    input{
+      display: none;
+      &:checked{
+        + label{
+          &:after{
+            content: "\f00c";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 16px;
+            color: #212121;
+            position: absolute;
+            top: 25%;
+            left: 266px;
+          }
+        }
+      }
+    }
+  }
+  label{
+    padding-left: 0px !important;
+    font: 400 30px "MouseMemoirsRegular";
+    text-transform: uppercase;
+    &:before{
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #B5B5B5;
+      content: "";
+      position: absolute;
+      left: 265px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .billing_block2{
+    .input-field{
+      p{
+        span{
+          font-size: 16px;
+          &.price_navy{
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+  .main_content_checkout{
+    .billing-fields{
+      .input-field{
+        textarea{
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .billing_block2{
+    .input-field{
+      p{
+        span{
+          font-size: 14px;
+          &.price_navy{
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .billing_block2{
+    .input-field{
+      p{
+        span{
+          font-size: 12px;
+          &.price_navy{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,369 @@
+//09_shop_list
+/********************
+********************/
+.filter_pro_09{
+  .title_product {
+    line-height: 0px !important;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    a {
+      font-size: 36px !important;
+      color: #333333;
+    }
+  }
+  .caption_v9{
+    .price{
+      line-height: 72px !important;
+    }
+    .action_v9{
+      bottom: 0px;
+      width: 100%;
+      opacity: 10;
+      cursor: pointer;
+      margin-top: 20px;
+      bottom: 0px;
+      transition: all 0.5s ease;
+      a{
+        margin-right: 20px;
+        text-decoration: none;
+        position: relative;
+        &:hover{
+          text-decoration: none;
+        }
+        &.img_cart{
+          .cart_default{
+            position: relative;
+            z-index: 10;
+            transition: all 0.5s ease;
+            backface-visibility:hidden;
+          }
+          .cart_hover{
+            position: absolute;
+            z-index: 5;
+            left: 0px;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            backface-visibility:hidden;
+            -webkit-transform:rotateY(-180deg);
+            -moz-transform:rotateY(-180deg);
+            transform:rotateY(-180deg);
+            -webkit-transition:all .5s;
+            -moz-transition:all .5s;
+            transition:all .5s;
+          }
+          &:hover{
+            .cart_default{
+              -webkit-transform:rotateY(180deg);
+              -moz-transform:rotateY(180deg);
+              transform:rotateY(180deg)
+
+            }
+            .cart_hover{
+              -webkit-transform:rotateY(0);
+              -moz-transform:rotateY(0);
+              transform:rotateY(0);
+            }
+          }
+        }
+        &.img_wishlist{
+          .wishlist_default{
+            position: relative;
+            z-index: 10;
+            transition: all 0.5s ease;
+            backface-visibility:hidden;
+          }
+          .wishlist_hover{
+            position: absolute;
+            z-index: 5;
+            left: 0px;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            backface-visibility:hidden;
+            -webkit-transform:rotateY(-180deg);
+            -moz-transform:rotateY(-180deg);
+            transform:rotateY(-180deg);
+            -webkit-transition:all .5s;
+            -moz-transition:all .5s;
+            transition:all .5s;
+          }
+          &:hover{
+            .wishlist_default{
+              -webkit-transform:rotateY(180deg);
+              -moz-transform:rotateY(180deg);
+              transform:rotateY(180deg)
+
+            }
+            .wishlist_hover{
+              -webkit-transform:rotateY(0);
+              -moz-transform:rotateY(0);
+              transform:rotateY(0);
+            }
+          }
+        }
+        &.img_quickview{
+          .quickview_default{
+            position: relative;
+            z-index: 10;
+            transition: all 0.5s ease;
+            backface-visibility:hidden;
+          }
+          .quickview_hover{
+            position: absolute;
+            z-index: 5;
+            left: 0px;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            backface-visibility:hidden;
+            -webkit-transform:rotateY(-180deg);
+            -moz-transform:rotateY(-180deg);
+            transform:rotateY(-180deg);
+            -webkit-transition:all .5s;
+            -moz-transition:all .5s;
+            transition:all .5s;
+          }
+          &:hover{
+            .quickview_default{
+              -webkit-transform:rotateY(180deg);
+              -moz-transform:rotateY(180deg);
+              transform:rotateY(180deg)
+
+            }
+            .quickview_hover{
+              -webkit-transform:rotateY(0);
+              -moz-transform:rotateY(0);
+              transform:rotateY(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  .hover_buy{
+    margin-top: 40px;
+    margin-right: 20px;
+    border: 1px solid #0f0f0f;
+    border: 1px solid #0f0f0f;
+    padding-right: 22px;
+    height: 55px;
+    width: 55px;
+    border-radius: 55px;
+    padding-top: 14px;
+    padding-left: 13px;
+    &:hover{
+      color: red;
+      border-color: $link-color;
+    }
+  }
+  .img_filter{
+    img{
+      &.img-product{
+        width: 100%;
+      }
+    }
+  }
+}
+.filter_bar_09{
+  margin-bottom: 30px;
+}
+.contact_product_09{
+  color: #949494;
+  font-family: 'BellGothicStdLight';
+  font-size: 16px;
+  line-height: 25px;
+}
+.pagination_09{
+  padding-top: 30px;
+}
+
+/************************************/
+/******* Responsive 09 Shoplist ****/
+@media only screen and (max-width: 990px) {
+  .filter_pro_09{
+    .caption_v9{
+      .action_v9{
+        a{
+          &.img_quickview{
+            .quickview_hover{
+              display: none;
+            }
+          }
+          &.img_wishlist{
+            .wishlist_hover{
+              display: none;
+            }
+          }
+          &.img_cart{
+            .cart_hover{
+              display: none;
+            }
+          }
+          &.img_quickview{
+            &:hover{
+              .quickview_default{
+                -webkit-transform:rotateY(0) !important;
+                -moz-transform:rotateY(0) !important;
+                transform:rotateY(0) !important;
+              }
+            }
+          }
+          &.img_wishlist{
+            &:hover{
+              .wishlist_default{
+                -webkit-transform:rotateY(0) !important;
+                -moz-transform:rotateY(0) !important;
+                transform:rotateY(0) !important;
+              }
+            }
+          }
+          &.img_cart{
+            &:hover{
+              .cart_default{
+                -webkit-transform:rotateY(0) !important;
+                -moz-transform:rotateY(0) !important;
+                transform:rotateY(0) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px)  {
+  .shoplist_09{
+    .filter_pro_09{
+      .img_filter{
+        a{
+          img{
+            &.img_product{
+              min-width: 100%;
+            }
+          }
+        }
+      }
+      .caption_v9{
+        a{
+          img{
+            height: 40px;
+            width: 40px;
+          }
+        }
+        .title_product{
+          a{
+            font-size: 25px !important;
+          }
+        }
+        .price{
+          line-height: 42px !important;
+          .price_new{
+            font-size: 30px;
+          }
+          .price_old{
+            font-size: 18px;
+          }
+        }
+        .contact_product_09{
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 980px) {
+  .shoplist_09{
+    .filter_pro_09{
+      .img_filter{
+        a{
+          img{
+            &.img_product{
+              min-width: 100%;
+            }
+          }
+        }
+      }
+      .caption_v9{
+        a{
+          img{
+            height: 50px;
+            width: 50px;
+          }
+        }
+        .title_product{
+          a{
+            font-size: 28px !important;
+          }
+        }
+        .price{
+          line-height: 50px !important;
+        }
+        .contact_product_09{
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .shoplist_09{
+    .filter_pro_09{
+      .img_filter{
+        a{
+          img{
+            &.img_product{
+              min-width: 100%;
+            }
+          }
+        }
+      }
+      .caption_v9{
+        .action_v9{
+          margin-top: 16px;
+        }
+        a{
+          img{
+            height: 35px;
+            width: 35px;
+          }
+        }
+        .title_product{
+          padding-top: 16px;
+          a{
+            font-size: 20px !important;
+          }
+        }
+        .price{
+          line-height: 32px !important;
+          .price_new{
+            font-size: 25px;
+          }
+          .price_old{
+            font-size: 15px;
+          }
+        }
+        .contact_product_09{
+          font-size: 10px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/** 6.7.1. About Us **/
+
+/** 6.7.1.1 About Us Version 1 **/
+
+/** 6.7.1.2 About Us Version 2 **/
+
+/** 6.7.2. Contact Us **/
+
+/** 6.7.3. FAQ's**/

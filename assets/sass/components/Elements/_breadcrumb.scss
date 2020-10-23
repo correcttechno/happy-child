@@ -1,0 +1,372 @@
+// Core variables and mixins
+@import "heading";
+.breadcrumbs{    
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+    background-color: #f9f9f9;    
+    padding: 30px 0; 
+    z-index: 1;    
+    h2{
+        margin: 0;
+        @include rtl-float-left;
+        font-weight: 400;
+        position: relative;
+    }
+    .breadcrumb-links{
+        margin: 6px 0 0; 
+        position: relative;       
+        @include rtl-text-align-right;
+        > li{
+            display: inline-block;
+            + li:before{
+                content: "\f105";
+                font-family: FontAwesome;
+                padding: 0 15px;
+                font-size: 34px;
+                top: -13px;
+                color: #fff;
+            }
+        }
+        > .active{
+            color: #fff;
+        }
+    }        
+    &.light-style{
+        color: #fff;
+        border: 0px;
+        h2 {
+            color: #fff;
+        } 
+        .breadcrumb-links{
+            > li{
+                a{
+                    color: #e4e3e3;
+                } 
+                + li:before{
+                    color: #e4e3e3;
+                }
+            }
+            > .active span{
+                color: #fff ;
+                text-decoration: underline;
+            }
+        }
+    }      
+}
+.breadcrumbs-center{
+    text-align: center;
+    padding: 34px;
+    h2{
+        float: none;
+    }
+    .breadcrumb-links{
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+.breadcrumbs-left{
+    h2{        
+        float: none;
+        @include rtl-text-align-left;
+    }
+    .breadcrumb-links{
+        @include rtl-text-align-left;
+    }
+}
+.breadcrumbs-right{
+    h2{        
+        float: none;
+        @include rtl-text-align-right;
+    }
+    .breadcrumb-links{
+        @include rtl-text-align-right;
+    }
+}
+.breadcrumb_04{
+    color: #fff;
+    margin-bottom: 30px;
+    background: url(../images/header/background_breadcrumb.jpg) !important;
+    border: 0px solid !important;
+    h2{
+        font-family: 'MouseMemoirsRegular';
+        font-size: 60px;
+        text-shadow: 2px 2px 2px #c687e8;
+    }
+}
+.breadcrumbs{
+    .breadcrumb-links{
+        font: 400 14px "BellGothicStdBlack";
+        li{
+            &.boy_fashion:before{
+                content: "\f178";
+                color: #fff !important;
+                font-family: FontAwesome;
+                font-size: 14px;
+                top: -13px;
+                color: #fff;
+            }
+            a{
+                text-decoration: none;
+                color: #e4e3e3 !important;
+            }
+        }
+    }
+}
+.breadcrumb_2blog{
+    h2{
+        margin-top: 22px;
+    }
+    ul{
+        margin-bottom: 26px !important;
+    }
+}
+.breadcrumb_15{
+    ul{
+        margin-top: 15px !important;
+        margin-bottom: 8px !important;
+        padding-top: 20px;
+        li{
+            position: relative;
+            width: 24%;
+            height: 90px;
+            margin-right: 7%;
+            text-shadow: 2px 2px 2px #ca8bed;
+            letter-spacing: 1px;
+                .number_breadcrumb{
+                    font-family: 'MouseMemoirsRegular';
+                    font-size: 60px;
+                    position: absolute;
+                }
+                .title_breadcrumb{
+                    text-align: start;
+                    font-family: 'MouseMemoirsRegular';
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    line-height: 15px;
+                    position: absolute;
+                    left: 54px;
+                    top: 20px;
+
+                }
+                .items_list{
+                    font-family: 'BellGothicStdBlack';
+                    font-size: 14px;
+                    position: absolute;
+                    left: 54px;
+                    top: 44px;
+                }
+            .number_breadcrumb{
+                font-family: 'MouseMemoirsRegular';
+                font-size: 60px;
+
+            }
+            .title_breadcrumb{
+                text-align: start;
+                font-family: 'MouseMemoirsRegular';
+                font-size: 36px;
+                text-transform: uppercase;
+                line-height: 15px;
+            }
+            .items_list{
+                font-family: 'BellGothicStdBlack';
+                font-size: 14px;
+            }
+            &.order_breadcrumb{
+                margin-right: 0px !important;
+               .number_breadcrumb{
+                   padding-right: 15px;
+               }
+            }
+            &.order_breadcrumb{
+                &:before{
+                    color: #e4e3e3 !important;
+                }
+            }
+            &:before{
+                position: absolute;
+                margin-left: -145px;
+                margin-top: 30px;
+                left: 62px;
+                font-size: 34px;
+            }
+        }
+    }
+}
+/*********************************************************/
+//25 About us
+/*********************************************************/
+.breadcrumb_about_us{
+    background: url("../images/header/banner_breadcumb.jpg") scroll center;
+    border: none;
+    h2{
+        color: #e41d2e;
+        font: 400 60px "MouseMemoirsRegular";
+    }
+    p{
+        color: #384551;
+        font: 400 18px "BellGothicStdBlack";
+    }
+}
+
+
+
+/**********************************************************/
+/*********** Responsive Breadcrumb 15 shopping cart *******/
+@media only screen and (min-width: 1023px) and (max-width: 1199px) {
+    .breadcrumb_15{
+        ul{
+            li{
+                .title_breadcrumb{
+                    font-size: 26px;
+                }
+                .items_list{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .breadcrumbs-center{
+        padding: 10px;
+    }
+    .breadcrumb_15{
+        background: #d79af6 !important;
+        ul{
+            padding-left: 35%;
+            li{
+                text-align: center;
+                width: 100%;
+                margin-right: 0px;
+                &:before{
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 730px) {
+    .breadcrumb_15{
+        ul{
+            padding-left: 31%;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .breadcrumbs-center{
+        padding: 0px;
+    }
+    .breadcrumb_15{
+        ul{
+            padding-left: 29%;
+            li{
+                
+            }
+        }
+    }
+}
+@media only screen and (max-width:  480px) {
+    .breadcrumb_15{
+        ul{
+            padding-left: 20%;
+            padding-top: 10px;
+            li{
+                height: 70px;
+                .number_breadcrumb{
+                    font-size: 54px;
+                }
+                .title_breadcrumb{
+                    font-size: 24px;
+                    line-height: 7px;
+                    left: 50px;
+                }
+                .items_list{
+                    font-size: 12px;
+                    left: 50px;
+                    top: 38px
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:  361px) {
+    .breadcrumb_15{
+        ul{
+            padding-left: 12%;
+            li{
+                height: 70px;
+                .number_breadcrumb{
+                    font-size: 50px;
+                }
+                .title_breadcrumb{
+                    font-size: 26px;
+                    left: 50px;
+                    top: 14px
+                }
+                .items_list{
+                    font-size: 12px;
+                    left: 50px;
+                    top: 36px
+                }
+            }
+        }
+    }
+}
+
+
+/*********************************************************/
+/**************** Responsive 25 About Us ***************/
+@media only screen and (max-width: 730px) {
+    .breadcrumb_about_us{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h2{
+            font-size: 46px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .breadcrumb_about_us{
+        h2{
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}
+@media only screen and (max-width: 376px) {
+    .breadcrumb_about_us{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h2{
+            font-size: 34px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

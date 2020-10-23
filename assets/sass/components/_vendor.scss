@@ -1,0 +1,55 @@
+/** 1.1. Vendor **/
+
+/** 1.1.1.	Google fonts **/
+
+@font-face {
+    font-family: 'BellGothicStdBlack';
+    src: url('../vendor/fonts/BellGothicStdBlack.eot');
+    src: url('../vendor/fonts/BellGothicStdBlack.eot') format('embedded-opentype'),
+         url('../vendor/fonts/BellGothicStdBlack.woff2') format('woff2'),
+         url('../vendor/fonts/BellGothicStdBlack.woff') format('woff'),
+         url('../vendor/fonts/BellGothicStdBlack.ttf') format('truetype'),
+         url('../vendor/fonts/BellGothicStdBlack.svg#BellGothicStdBlack') format('svg');
+}
+@font-face {
+    font-family: 'BellGothicStdBold';
+    src: url('../vendor/fonts/BellGothicStdBold.eot');
+    src: url('../vendor/fonts/BellGothicStdBold.eot') format('embedded-opentype'),
+         url('../vendor/fonts/BellGothicStdBold.woff2') format('woff2'),
+         url('../vendor/fonts/BellGothicStdBold.woff') format('woff'),
+         url('../vendor/fonts/BellGothicStdBold.ttf') format('truetype'),
+         url('../vendor/fonts/BellGothicStdBold.svg#BellGothicStdBold') format('svg');
+}
+@font-face {
+    font-family: 'BellGothicStdLight';
+    src: url('../vendor/fonts/BellGothicStdLight.eot');
+    src: url('../vendor/fonts/BellGothicStdLight.eot') format('embedded-opentype'),
+         url('../vendor/fonts/BellGothicStdLight.woff2') format('woff2'),
+         url('../vendor/fonts/BellGothicStdLight.woff') format('woff'),
+         url('../vendor/fonts/BellGothicStdLight.ttf') format('truetype'),
+         url('../vendor/fonts/BellGothicStdLight.svg#BellGothicStdLight') format('svg');
+}
+@font-face {
+    font-family: 'KingCoolKC';
+    src: url('../vendor/fonts/KingCoolKC.eot');
+    src: url('../vendor/fonts/KingCoolKC.eot') format('embedded-opentype'),
+         url('../vendor/fonts/KingCoolKC.woff2') format('woff2'),
+         url('../vendor/fonts/KingCoolKC.woff') format('woff'),
+         url('../vendor/fonts/KingCoolKC.ttf') format('truetype'),
+         url('../vendor/fonts/KingCoolKC.svg#KingCoolKC') format('svg');
+}
+@font-face {
+    font-family: 'MouseMemoirsRegular';
+    src: url('../vendor/fonts/MouseMemoirsRegular.eot');
+    src: url('../vendor/fonts/MouseMemoirsRegular.eot') format('embedded-opentype'),
+         url('../vendor/fonts/MouseMemoirsRegular.woff2') format('woff2'),
+         url('../vendor/fonts/MouseMemoirsRegular.woff') format('woff'),
+         url('../vendor/fonts/MouseMemoirsRegular.ttf') format('truetype'),
+         url('../vendor/fonts/MouseMemoirsRegular.svg#MouseMemoirsRegular') format('svg');
+}
+
+/** 1.1.2.	Icon Fonts **/
+
+
+/** 1.1.3. Vendor library **/
+/* EX: @import url('components/Vendor/owlcarousel/owlcarousel.css'); */
